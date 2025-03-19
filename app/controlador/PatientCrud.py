@@ -3,7 +3,7 @@ from bson import ObjectId
 from fhir.resources.patient import Patient
 import json
 
-collection = connect_to_mongodb("HospitalHIS1", "patient")
+collection = connect_to_mongodb("SamplePatientService", "patients")
 
 def GetPatientById(patient_id: str):
     try:
