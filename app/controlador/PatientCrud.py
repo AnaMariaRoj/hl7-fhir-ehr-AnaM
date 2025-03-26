@@ -14,9 +14,9 @@ def GetPatientById(patient_id: str):
         return "notFound", None
     except Exception as e:
         return f"notFound", None
-        
-#Modificación clase 26 de Marzo para buscar pacientes por cédula.  
-        def GetPatientByIdentifier(patientSystem,patientValue):
+
+#Modificación clase 26 de Marzo para buscar pacientes por cédula. 
+def GetPatientByIdentifier(patientSystem,patientValue):
     try:
         patient = collection.find_one({"identifier.system":patientSystem,"identifier.value":patientValue})
         if patient:
@@ -24,8 +24,8 @@ def GetPatientById(patient_id: str):
             return "success", patient
         return "notFound", None
     except Exception as e:
-        return f"notFound", None
-
+        return f"notFound", None        
+         
     
 def WritePatient(patient_dict: dict):
     try:
