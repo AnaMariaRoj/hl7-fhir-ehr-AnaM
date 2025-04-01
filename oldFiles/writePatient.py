@@ -30,7 +30,7 @@ if __name__ == "__main__":
     uri = "mongodb+srv://mardugo:clave@sampleinformationservic.t2yog.mongodb.net/?retryWrites=true&w=majority&appName=SampleInformationService"
 
     # Nombre de la base de datos y la colección
-    db_name = "HIS"
+    db_name = "SamplePatientService"
     collection_name = "patients"
 
     # Conectar a MongoDB
